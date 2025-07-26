@@ -11,8 +11,15 @@ app.use(cors({
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    // Allow all localhost origins
+    // Allow all localhost origins with any port
     if (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:')) {
+      return callback(null, true);
+    }
+    
+    // Allow specific ports that might be used
+    const allowedPorts = ['5173', '5174', '5175', '3000', '5004'];
+    const port = origin.split(':').pop();
+    if (allowedPorts.includes(port)) {
       return callback(null, true);
     }
     
@@ -170,7 +177,7 @@ Provide practical, actionable steps tailored to the specific domain and experien
   }
 });
 
-const PORT = process.env.PORT || 5004;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`🚀 Gemini backend running on port ${PORT}`);
   console.log(`📡 Ready to generate career roadmaps!`);

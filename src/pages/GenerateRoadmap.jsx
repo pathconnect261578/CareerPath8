@@ -43,9 +43,9 @@ export default function GenerateRoadmap() {
     console.log('Submitting form with data:', formData);
 
     try {
-      console.log('Making request to: http://localhost:5004/generate-roadmap');
+      console.log('Making request to: http://localhost:8080/generate-roadmap');
       
-      const response = await fetch('http://localhost:5004/generate-roadmap', {
+      const response = await fetch('http://localhost:8080/generate-roadmap', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export default function GenerateRoadmap() {
       }
     } catch (err) {
       console.error('Fetch error:', err);
-      setError(`Network error: ${err.message}. Please check if the backend server is running on port 5003.`);
+      setError(`Network error: ${err.message}. Please check if the backend server is running on port 8080.`);
     } finally {
       setLoading(false);
     }
