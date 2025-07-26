@@ -1,0 +1,78 @@
+/* Global Styles for Modern UI */
+
+body {
+  font-family: 'Segoe UI', 'Poppins', 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #06beb6 0%, #3b82f6 100%);
+  min-height: 100vh;
+  color: #222;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.15);
+  padding: 2.5rem 2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 48px 0 rgba(6, 190, 182, 0.25);
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #06beb6 0%, #3b82f6 100%);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(6, 190, 182, 0.25);
+  background: linear-gradient(90deg, #3b82f6 0%, #06beb6 100%);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem 0.5rem;
+    max-width: 95vw;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Fade and scale animation */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-scale {
+  animation: fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+} 
