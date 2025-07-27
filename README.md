@@ -85,7 +85,7 @@ GEMINI_API_KEY=your_key_here
 
 ---
 ## 🔍 Demo Preview of the Platform
-Here's the link:
+# 🔗 Website Link:
 https://youtu.be/rIH4pudqAhA
 
 ## 🔒 Security
@@ -104,13 +104,13 @@ https://youtu.be/rIH4pudqAhA
 
 ---
 ## 🖼️ Platform Screenshots
-
+# 🚀 Landing page
 ![Landing Page](https://github.com/user-attachments/assets/fb874f41-a430-4a1b-9106-047ef9d0a97f)
-
+# 🔑 Login Page
 ![Login Page](https://github.com/user-attachments/assets/f8f1f36d-5477-412e-a238-7b2dec22223d)
-
+# 🖥️ DashBoard Page
 ![Dashboard page](https://github.com/user-attachments/assets/552c7d36-062e-46a2-8781-24d7f3543ed3)
-
+# 👩‍🎓 / 👨‍🎓 Seniors Career PaTh
 ![Seniors Career Paths](https://github.com/user-attachments/assets/93f1ca61-e170-4213-aa9e-647a3766d501)
-
+# 🤖 AI CareerPath Visualizer
 ![AI CareerPAth_Visualizer](https://github.com/user-attachments/assets/ba33c045-86ad-4b37-ae1f-1a0f8c30e786)
